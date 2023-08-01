@@ -1,7 +1,7 @@
 #include "allocator.h"
 
 /* An allocator that uses statically allocated memory */
-static allocator sta;
+static allocator_t sta;
 
 #define sta_alloc(sz)     allocator_alloc(&sta, (sz))
 #define sta_free(p)       allocator_free(&sta, (p))
